@@ -2,10 +2,17 @@
 -- Alter any existing customer in the database with at least 10 rental and 10 payment records. Change their personal data to yours (first name, last name, address, etc.). You can use any existing address from the "address" table. Please do not perform any updates on the "address" table, as this can impact multiple records with the same address.
 -- Change the customer's create_date value to current_date.
 
+-- first option
 UPDATE film
 SET rental_duration = 21,
     rental_rate = 9.99
 WHERE title = 'The Lord of the Rings';
+
+-- second option
+UPDATE film
+SET rental_duration = 21,
+    rental_rate = 9.99
+WHERE film_id = 1001;
 
 
 UPDATE customer
